@@ -13,11 +13,20 @@ public class Mitarbeiter {
         this.yearOfEntry = yearOfEntry;
     }
 
-    public String getInfo() {
-        return "Mitarbeiter Name: " + (familyName) + 
+    public String getInfo(String role) {
+        if (role == "Personalmanagerin")  {
+                    return "Mitarbeiter Name: " + (familyName) + 
         ", Vorname: " + firstName + 
         ", Rolle: " + role +
         ", Eintrittsjahr: " + yearOfEntry;
+        } else {
+            return "Kein Zugriff";
+        }
+
+    }
+
+    public String getRole() {
+        return this.role;
     }
 
 }

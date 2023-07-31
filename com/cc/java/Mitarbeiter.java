@@ -14,11 +14,11 @@ public class Mitarbeiter {
     }
 
     public String getInfo(String role) {
-        if (role == "Personalmanagerin")  {
-                    return "Mitarbeiter Name: " + (familyName) + 
-        ", Vorname: " + firstName + 
-        ", Rolle: " + role +
-        ", Eintrittsjahr: " + yearOfEntry;
+        if (role == "Personalmanagerin") {
+            return "Mitarbeiter Name: " + (familyName) +
+                    ", Vorname: " + firstName +
+                    ", Rolle: " + role +
+                    ", Eintrittsjahr: " + yearOfEntry;
         } else {
             return "Kein Zugriff";
         }
